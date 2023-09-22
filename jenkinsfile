@@ -1,0 +1,22 @@
+pipeline {
+    stages {
+        stage('Git checkout') {
+
+        }
+        stage('Gradle Build') {
+            sh './gradlew build'
+        }
+        stage('Docker Build') {
+            sh 'docker build -t 9841/testimage:1.0 .'
+        }
+        stage('docker login') {
+            sh 'docker login -u 9841 -p '
+        }
+        stage('Push image to dockerhub') {
+            sh 'docker push 9841/testimage:1.0'
+        }
+        stage('Kubernetes deployment') {
+            sh 'kubectl apply -f deployment.yaml'
+        }
+    }
+}
