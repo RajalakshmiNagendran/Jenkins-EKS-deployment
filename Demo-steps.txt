@@ -1,0 +1,12 @@
+Faced issue while pushing code to new repo: solved 
+1. Go to your github profile settings
+2. Select Developer section and go to Personal Access token
+3. Create a new acces Token ( Copy it as soon as it has been generated )
+4. Then try to push some changes in your repository, you will be asked to put username and password
+5. For the password, just paste the access token you just copied
+
+Faced issue with gradle version: solved
+https://ubunlog.com/en/gradle-java-automation-tool/#Descargar_Gradle
+
+faced issue with jenkins installation: solved
+https://pkg.origin.jenkins.io/debian-stable/

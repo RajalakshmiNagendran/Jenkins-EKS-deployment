@@ -1,7 +1,8 @@
 pipeline {
+    agent any
     stages {
         stage('Git checkout') {
-
+            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/RajalakshmiNagendran/Jenkins-EKS-deployment.git']])
         }
         stage('Gradle Build') {
             sh './gradlew build'
