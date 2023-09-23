@@ -16,7 +16,7 @@ spec:
         - name: springboot
           image: 9841/testimage:1.0
           ports:
-            - containerport: 8080
+            - containerPort: 8080
           env:
             - name: PORT
               value: "8080"
@@ -29,6 +29,6 @@ spec:
   type: LoadBalancer
   ports:
     - port: 80
-      targetport: 8080
+      targetPort: 8080
   selector: 
     app: jhooq-springboot
