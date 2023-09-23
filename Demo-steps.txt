@@ -31,6 +31,11 @@ delete cluster:
 
 1.eksctl delete cluster --name jhooq-test-cluster
 
+deleted 
+1.cloudformation
+2.EC2
+3.VPC 
+
 Clean Up Additional Resources (if needed):
 
 Depending on your specific setup, you might have additional AWS resources like VPCs, EBS volumes, or security groups associated with the EKS cluster. You should manually delete these resources if they are no longer needed.
