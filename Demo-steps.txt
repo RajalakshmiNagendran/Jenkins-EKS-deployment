@@ -1,4 +1,5 @@
-https://jhooq.com/aws-kubernetes-jenkins-pipeline/#12-add-jenkins-stages
+followed document: https://jhooq.com/aws-kubernetes-jenkins-pipeline/#12-add-jenkins-stages
+follwed video: https://www.youtube.com/watch?v=ENNBdmNn4r0&t=172s
 
 Faced issue while pushing code to new repo: solved 
 1. Go to your github profile settings
@@ -18,3 +19,4 @@ $ gradle wrapper
 
 Kubernetes version mismatch issue between kubectl and kubernetes cluster version: resolved
 https://networkcult.com/fix-error-exec-plugin-invalid-apiversion-client-authentication-k8s-io-v1alpha1-1272/#:~:text=This%20issue%20is%20fixed%20in%20the%20latest%20version,1.%20Update%20aws%20cli%202.%20update%20kub%20config
+any how in this article it is mentioned to use 1.23.9 in v1 but i have used kubectl Client Version: v1.26.8-eks-43840fb
