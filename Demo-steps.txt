@@ -10,3 +10,6 @@ https://ubunlog.com/en/gradle-java-automation-tool/#Descargar_Gradle
 
 faced issue with jenkins installation: solved
 https://pkg.origin.jenkins.io/debian-stable/
+
+initiate gradle wrapper: solved
+$ gradle wrapper
