@@ -20,3 +20,17 @@ $ gradle wrapper
 Kubernetes version mismatch issue between kubectl and kubernetes cluster version: resolved
 https://networkcult.com/fix-error-exec-plugin-invalid-apiversion-client-authentication-k8s-io-v1alpha1-1272/#:~:text=This%20issue%20is%20fixed%20in%20the%20latest%20version,1.%20Update%20aws%20cli%202.%20update%20kub%20config
 any how in this article it is mentioned to use 1.23.9 in v1 but i have used kubectl Client Version: v1.26.8-eks-43840fb
+
+delete cluster:
+1.kubectl delete all --all -n default
+2.eksctl delete nodegroup --cluster jhooq-test-cluster --name worker-nodes
+3.aws eks delete-nodegroup --cluster-name jhooq-test-cluster --nodegroup-name worker-nodes
+4.aws eks delete-cluster --name jhooq-test-cluster
+
+(or)
+
+1.eksctl delete cluster --name jhooq-test-cluster
+
+Clean Up Additional Resources (if needed):
+
+Depending on your specific setup, you might have additional AWS resources like VPCs, EBS volumes, or security groups associated with the EKS cluster. You should manually delete these resources if they are no longer needed.
